@@ -14,6 +14,7 @@ A tool that uses Claude to review Python code and surface concrete issues — bu
 - Sanitized output to prevent unsafe HTML from being rendered
 - A command-line version (`review.py`) that supports interactive follow-up reviews without restarting
 - Graceful error handling for missing files, bad input, and API failures
+- Review history is stored locally in SQLite; on the live demo (free hosting tier of render.com), history resets periodically since the filesystem isn't persistent.
 
 ## Tech stack
 
