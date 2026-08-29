@@ -1,0 +1,45 @@
+body {
+    font-family: -apple-system, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #222;
+    background: #fafafa;
+}
+
+h1 {
+    color: #1a1a2e;
+}
+
+textarea {
+    width: 100%;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+}
+
+button {
+    background: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+pre, code {
+    background: #f0f0f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+pre {
+    padding: 12px;
+    overflow-x: auto;
+}
+
+a {
+    color: #1a1a2e;
+}

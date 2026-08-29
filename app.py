@@ -35,7 +35,7 @@ def home():
             print(e)
             review_html = "<p>Something went wrong reaching the API — check your connection or API key.</p>"
 
-        return f"<h1>Review</h1><div>{review_html}</div><a href='/'>Back</a>"
+        return render_template("result.html", review_html=review_html)
 
     return render_template("index.html")
 
