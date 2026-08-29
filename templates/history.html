@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Review History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Review History</h1>
+    <a href="/">New Review</a>
+
+    {% if not history_items %}
+        <p>No reviews yet.</p>
+    {% endif %}
+
+    {% for item in history_items %}
+        <hr>
+        <p><strong>{{ item.created_at }}</strong></p>
+        <details>
+            <summary>Submitted code</summary>
+            <pre>{{ item.code_text }}</pre>
+        </details>
+        <div>{{ item.review_html | safe }}</div>
+    {% endfor %}
+</body>
+</html>
